@@ -1,0 +1,6 @@
+<h1>Compose A Tweet</h1>
+
+<form class="new-tweet" action="/tweets" method="post">
+  <input type="text" name="info[tweet]" placeholder="Compose your tweet">
+  <input type="submit" name="info[user_id][<%= @current_user.id %>]" value="Submit">
+</form>

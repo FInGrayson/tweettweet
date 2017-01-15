@@ -1,8 +1,8 @@
 <h1>Welcome to Hooter</h1>
 <ul>
   <% @tweets.each do |tweet| %>
-  <li><%= @tweet.user %></li>
-  <li><%= @tweet.tweet %></li>
-  <li><%= @tweet.created_at %></li>
+    <div class="tweet-container">
+      <%= erb :'/_partial/_tweet', layout: false, locals {tweet: tweet} %>
+    </div>
   <% end %>
 </ul>
